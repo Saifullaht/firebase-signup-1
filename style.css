@@ -1,0 +1,78 @@
+/* Reset default margin and padding */
+ /* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Container styles */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    animation: fadein 0.5s ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out; /* Smooth border color transition */
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #66afe9; /* Blue border on focus */
+    animation: border-grow 0.3s ease-in-out; /* Border grow animation */
+}
+
+@keyframes border-grow {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    animation: background-pulse 0.3s ease-in-out; /* Background color pulse animation */
+}
+
+@keyframes background-pulse {
+    0% { background-color: #4CAF50; }
+    50% { background-color: #45a049; }
+    100% { background-color: #4CAF50; }
+}
